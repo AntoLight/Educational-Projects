@@ -1,0 +1,110 @@
+    html {
+        box-sizing: border-box;
+        font-size: 62.5%;
+    }
+    
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
+    }
+    /* Globales */
+    
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e57de7+1,c85ec7+50,a849a3+100 */
+        background: #e57de7;
+        /* Old browsers */
+        background: -moz-linear-gradient(top, #e57de7 0%, #c85ec7 51%, #a849a3 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, #e57de7 0%, #c85ec7 51%, #a849a3 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, #e57de7 0%, #c85ec7 51%, #a849a3 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#e57de7', endColorstr='#a849a3', GradientType=0);
+        /* IE6-9 */
+    }
+    
+    .contenedor {
+        max-width: 120rem;
+        margin: 0 auto;
+    }
+    
+    img {
+        max-width: 100%;
+    }
+    
+    .boton {
+        background-color: #FFCE00;
+        padding: 1rem 4rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #8001c3;
+        font-weight: 600;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        transition: background-color .3s ease-in-out;
+    }
+    
+    .boton:hover {
+        background-color: #EBBC00;
+    }
+    /* Header */
+    
+    .logo {
+        text-align: center;
+    }
+    
+    .logo-dos {
+        padding: 4rem 0;
+    }
+    /* productos */
+    
+    h1 {
+        text-transform: uppercase;
+        color: white;
+        text-align: center;
+        margin: 4rem 0;
+        font-size: 2.6rem;
+    }
+    
+    .productos {
+        display: block;
+        text-align: center;
+    }
+    
+    @media (min-width: 768px) {
+        .productos {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-content: space-between;
+            column-gap: 4rem;
+        }
+    }
+    
+    .productos h2 {
+        color: white;
+        font-size: 2.8rem;
+        font-weight: bold;
+        margin: 1rem 0 0 0;
+        padding: 3rem;
+    }
+    
+    .producto {
+        display: block;
+        margin-bottom: 4rem;
+    }
+    
+    .producto img {
+        border: 1rem solid rgba(128, 1, 195, .45);
+        transition: border-color .3s ease-in-out;
+    }
+    
+    .producto img:hover {
+        border: 1rem solid rgba(128, 1, 195, 1);
+    }
+    
+    .producto h2 span {
+        color: #FFCE00;
+        font-size: 40px;
+    }
